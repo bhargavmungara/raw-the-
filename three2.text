@@ -1,0 +1,42 @@
+import java.util.Scanner;
+	public class challenge11{
+	public static void main(String args[]){
+		 Scanner scanner=new Scanner(System.in);
+		  int min=0;
+		  int max=0;
+		  boolean first=true;
+		  int number=scanner.nextInt();
+	
+		  while(true){
+			System.out.println("enter the number");
+			boolean isAnint=scanner.hasNextInt();
+		
+			if(first){
+				first=false;
+				min=number;
+				max=number;
+			}
+
+			
+
+				
+			if(number>max){
+				max=number;
+			}
+			
+			 if(number<min){
+				min=number;
+			}
+
+			else{
+				break;
+			}
+			scanner.nextLine();
+		
+		     
+			System.out.println("min is "+ min +"max no is"+ max);
+			scanner.close();
+		}
+	}
+}		
+
